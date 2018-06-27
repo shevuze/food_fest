@@ -16,8 +16,8 @@
 		<div class="ba-container">
 			<div class="ba-header">
 			<ul class="ba-nav ba-nav-l">
-				<li><a href="#">Як це</a></li>
-				<li><a href="#">Хто це</a></li>
+				<li><a href="#about">Як це</a></li>
+				<li><a href="#guests">Хто це</a></li>
 			</ul>
 			<div class="ba-logo">
 				<a href="#">
@@ -25,8 +25,8 @@
 				</a>
 			</div>
 			<ul class="ba-nav ba-nav-r">
-				<li><a href="#">Де це</a></li>
-				<li><a href="#">Це сувенірка</a></li>
+				<li><a href="#locate">Де це</a></li>
+				<li><a href="#products">Це сувенірка</a></li>
 			</ul>
 			<!-- /.ba-menu -->
 		</div>
@@ -44,8 +44,8 @@
 			</div>
 		</section>
 			<!-- /.ba-hero -->
-		<section class="ba-about-event">
-			<div class="ba-container">
+		<section class="ba-about-event" id="about">
+			
 			<div class="ba-about-event__title">
 				<h3>ЯК ЦЕ БУДЕ</h3>
 			</div>
@@ -54,15 +54,26 @@
 				<div class="ba-container">
 					<div class="ba-about-event__schedule">
 						<div class="ba-about-event__days">
-							<h4><a href="#">День перший</a><h4> //<h4><a href="#">День другий</a></h4>
+							<h4 class="ba-tab ba-active"><a href="#first-day">День перший</a></h4><span>//</span><h4 class="ba-tab ba-sd"><a href="#second-day">День другий</a></h4>
 						</div>
-						<ul>
-							<li>14:00 - 14:10 - Початок</li>
-							<li>14:10 - 16:10 - Їмо та п’ємо </li>
-							<li>16:20 - 18:20 - Танцюэмо сальсу</li>
-							<li>18:20 - 22 :00 - Їмо та відпочіваємо </li>
-							<li>22:00 - 23:45 - Дивимось кіношу під нічним небом</li>
-						</ul>
+						<div class="ba-tab-content content-open" id="first-day">
+							<ul class="ba-about-event__list">
+								<li>14:00 - 14:10 - Початок</li>
+								<li>14:10 - 16:10 - Їмо та п’ємо </li>
+								<li>16:20 - 18:20 - Танцюємо сальсу</li>
+								<li>18:20 - 22 :00 - Їмо та відпочіваємо </li>
+								<li>22:00 - 23:45 - Дивимось кіношу під нічним небом</li>
+							</ul>
+						</div>
+						<div class="ba-tab-content" id="second-day">
+							<ul class="ba-about-event__list">
+								<li>14:00 - 14:10 - Продовжуємо фест</li>
+								<li>14:10 - 16:10 - Їмо та п’ємо </li>
+								<li>16:20 - 18:20 - Танцюємо бачату</li>
+								<li>18:20 - 22 :00 - Їмо та відпочіваємо </li>
+								<li>22:00 - 23:45 - Закриття фестивалю</li>
+							</ul>
+						</div>
 					</div>
 					<!-- /.ba-about-event__schedule -->
 				</div>	
@@ -77,10 +88,10 @@
 				</div>
 				<!-- /.ba-container -->
 		</div>
-		</div>
+		
 		</section>
 		<!-- /.ba-about-event -->
-		<section class="ba-about-guest">
+		<section class="ba-about-guest" id="guests">
 			<div class="ba-about-guest__top">
 				<h3>ХТО ЦЕ</h3>
 			</div>
@@ -93,6 +104,7 @@
 						<img src="img/guests/1.png" alt="guest #1">
 						<div class="ba-guest-name">
 							<p>Федоренко Марія</p>
+							<span></span>
 							<p>Шеф-кухар</p>
 						</div>
 					</a>
@@ -103,6 +115,7 @@
 						<img src="img/guests/2.png" alt="guest #2">
 						<div class="ba-guest-name">
 							<p>Бабич Катерина</p>
+							<span></span>
 							<p>Су-шеф</p>
 						</div>
 					</a>	
@@ -113,6 +126,7 @@
 						<img src="img/guests/3.png" alt="guest #3">
 						<div class="ba-guest-name">
 							<p>Пікалов Микола</p>
+							<span></span>
 							<p>Шеф-кухар</p>
 						</div>
 					</a>	
@@ -134,6 +148,7 @@
 						<img src="img/guests/5.png" alt="guest #5">
 						<div class="ba-guest-name">
 							<p>Бондаренко Віталій</p>
+							<span></span>
 							<p>Хореограф</p>
 						</div>
 					</a>	
@@ -144,6 +159,7 @@
 						<img src="img/guests/6.png" alt="guest #6">
 						<div class="ba-guest-name">
 							<p>Шкнько Кароліна</p>
+							<span></span>
 							<p>Викладач йоги</p>
 						</div>
 					</a>	
@@ -205,7 +221,11 @@
 			<!-- /.ba-container -->
 		</section>
 		<!-- /.ba-partners -->
-		<section class="ba-souvenier">
+		<section class="ba-souvenier" id="products">
+			<div class="ba-souvenier__title">
+				<h3>ЦЕ СУВЕНІРКА</h3>
+			</div>
+			<!-- /.ba-souvenier__title -->
 			<div class="ba-container">
 				<div class="ba-souvenier__cont">
 					<p>Хочеш круту сувенірку? <br>тоді</p>
@@ -215,7 +235,7 @@
 			</div>
 		</section>
 		<!-- /.ba-souvenier -->
-		<div class="ba-location">
+		<div class="ba-location" id="locate">
 			<div class="ba-location__title">
 				<h3>ДЕ ЦЕ</h3>
 			</div>
@@ -228,12 +248,12 @@
 				<div class="ba-footer__content">
 					<div class="ba-footer__wrap">
 						<div class="ba-footer__contact">
-							<p>Зв’язатись з нами</p>
+							<p class="ba-mob-hide">Зв’язатись з нами</p>
 							<a href="tel:991528530" clas="ba-contact-link">(099)-152-85-30</a><br>
 							<a href="mailto:info@shopy.com" clas="ba-contact-link">foodfestplt@gmail.com</a>
 						</div>
 						<div class="ba-footer__adress">
-							<p>Місце проведення</p>
+							<p class="ba-mob-hide">Місце проведення</p>
 							<p>вул. Зіньківська, 6/1А <br>Арт-Платформа 11</p>
 						</div>
 					</div>

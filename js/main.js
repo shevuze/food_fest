@@ -1,17 +1,13 @@
 ;(function($) {
-    "use strict";
-    var slider = $('.ba-slider');
+	"use strict";
 
-    slider.slick({
-        dots:true,
-        slideToScroll:1,
-        slideToShow:1,
-        slide: '.ba-slide',
-        prevArrow: '.slick-prev',
-        nextArrow: '.slick-next',  
-        
-    });
+	$('.ba-tab').on('click', function(e){
+		$('.ba-tab').removeClass('ba-active');
+		$(this).addClass('ba-active');
 
+		var name = $(this).find('a').attr('href');
+
+		$('.ba-tab-content').removeClass('content-open');
+		$(name).addClass('content-open');
+	});
 })(jQuery);
-
-
