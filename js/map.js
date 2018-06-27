@@ -97,7 +97,7 @@
       var marker = new google.maps.Marker({
         position: {lat: 49.599999, lng: 34.530581},
         map: baMap,
-        icon:'../img/marker.png'
+        icon:'img/marker.png'
         });    
     }
 
