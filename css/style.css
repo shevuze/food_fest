@@ -619,10 +619,16 @@ input[type="button"],
 button {
   display: inline-block;
   color: #fff;
-  padding: 15px 49px;
+  padding: 6px 18px;
   background: #F39335;
-  font-size: 24px;
+  font-size: 12px;
   border: none; }
+  @media (min-width: 768px) {
+    input[type="submit"],
+    input[type="button"],
+    button {
+      padding: 15px 49px;
+      font-size: 24px; } }
 
 .ba-button {
   padding: 6px 22px;
@@ -811,7 +817,10 @@ header {
       .ba-about-event__days h4 a:hover {
         opacity: .5; }
     .ba-about-event__days .ba-sd {
-      padding-right: 15px; }
+      padding-right: 2px; }
+      @media (min-width: 768px) {
+        .ba-about-event__days .ba-sd {
+          padding-right: 15px; } }
     .ba-about-event__days span {
       padding: 0 5px;
       font-size: 24px; }
@@ -991,7 +1000,7 @@ header {
     text-align: center;
     color: #F39335;
     font-size: 16px;
-    padding-top: 30px;
+    padding-top: 20px;
     padding-bottom: 34px;
     max-width: 400px; }
     .ba-souvenier__cont p {
@@ -1095,19 +1104,25 @@ header {
       .ba-footer .ba-social-icon {
         margin-left: 22px; } }
 
-.ba-header-second {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  padding: 10px 13px 10px 13px;
-  position: relative;
-  font-weight: 600;
-  z-index: 2; }
+.ba-header-second .ba-logo {
+  top: 2px; }
 
-.ba-main-section {
+@media (min-width: 768px) {
+  .ba-header-second {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 10px 13px 10px 13px;
+    position: relative;
+    font-weight: 600;
+    z-index: 2; }
+    .ba-header-second .ba-logo {
+      top: -10px; } }
+
+.ba-product-body {
   background: #B71D2D; }
 
 .ba-products-list {
@@ -1117,51 +1132,114 @@ header {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  padding-top: 280px; }
-  .ba-products-list .ba-product {
-    width: 50%;
-    margin-bottom: 126px; }
+  padding: 30px 15px; }
+  @media (min-width: 768px) {
+    .ba-products-list {
+      padding-top: 280px;
+      padding-top: 220px; } }
   .ba-products-list__title {
-    background: url(../img/title-bg.svg) 50% no-repeat;
-    height: 177px;
-    width: 750px;
-    background-size: 100%;
-    text-align: center;
-    padding-top: 80px;
-    padding-right: 100px;
-    position: absolute;
-    top: -3px;
-    left: 24%;
-    z-index: 1; }
+    background: #0C1324;
+    padding: 4px 0 4px 15px;
+    margin-top: 17px; }
     .ba-products-list__title h3 {
-      color: #F39335;
-      font-size: 30px; }
-  .ba-products-list .ba-product-name {
-    font-size: 30px;
+      font-size: 14px;
+      font-weight: 400;
+      color: #F39335; }
+    @media (min-width: 768px) {
+      .ba-products-list__title {
+        background: url(../img/title-bg.svg) 50% no-repeat;
+        height: 177px;
+        width: 750px;
+        background-size: 100%;
+        text-align: center;
+        padding-top: 80px;
+        padding-right: 80px;
+        position: absolute;
+        top: 74px;
+        left: 24%;
+        z-index: 1;
+        margin-top: 0; }
+        .ba-products-list__title h3 {
+          font-size: 30px; } }
+
+.ba-product {
+  width: 100%;
+  margin-bottom: 70px; }
+  @media (min-width: 768px) {
+    .ba-product {
+      width: 50%;
+      margin-bottom: 126px; }
+      .ba-product:hover {
+        background: #800D18;
+        border-radius: 50%; } }
+  .ba-product__name {
+    font-size: 14px;
     font-weight: 400;
     padding-bottom: 16px; }
-  .ba-products-list .ba-img-shirt {
-    padding: 20px; }
-  .ba-products-list .ba-t-shirt {
-    background: #800D18;
-    border-radius: 50%;
-    padding: 50px;
-    margin-top: -40px;
-    margin-right: 20px;
-    margin-bottom: -40px; }
-  .ba-products-list .ba-img-mug {
-    margin-left: -80px;
-    margin-top: 60px;
-    margin-bottom: 36px; }
-  .ba-products-list .ba-img-bag {
-    margin-bottom: 29px; }
-  .ba-products-list .ba-img-note {
-    padding-left: 195px;
-    padding-top: 56px;
-    margin-bottom: 52px; }
-  .ba-products-list .ba-price {
-    font-size: 30px;
-    color: #F39335;
-    margin-right: 18px; }
+    @media (min-width: 768px) {
+      .ba-product__name {
+        font-size: 30px; } }
+  .ba-product form {
+    margin-top: 30px;
+    text-align: right; }
+
+@media (min-width: 768px) {
+  .ba-product-r {
+    padding-left: 40px; } }
+
+.ba-img-shirt {
+  width: 90%;
+  padding: 0px; }
+  @media (min-width: 768px) {
+    .ba-img-shirt {
+      padding: 20px;
+      width: auto; } }
+
+.ba-t-shirt {
+  margin-left: 30px; }
+  @media (min-width: 768px) {
+    .ba-t-shirt {
+      background: #800D18;
+      border-radius: 50%;
+      padding: 50px;
+      margin-top: -40px;
+      margin-right: 20px;
+      margin-bottom: -40px; } }
+
+.ba-img-mug {
+  margin-left: -80px; }
+  @media (min-width: 768px) {
+    .ba-img-mug {
+      margin-left: -100px;
+      margin-top: 60px;
+      margin-bottom: 60px; } }
+
+.ba-img-bag {
+  width: 80%;
+  margin-left: 35px; }
+  @media (min-width: 768px) {
+    .ba-img-bag {
+      margin-bottom: 29px;
+      margin-left: 0;
+      width: auto; } }
+
+.ba-img-note {
+  width: 60%;
+  margin-left: 60px; }
+  @media (min-width: 768px) {
+    .ba-img-note {
+      padding-left: 95px;
+      padding-top: 56px;
+      margin-bottom: 52px;
+      margin-left: 35px;
+      width: auto; } }
+
+.ba-price {
+  font-size: 14px;
+  color: #F39335;
+  margin-right: 18px; }
+  @media (min-width: 768px) {
+    .ba-price {
+      font-size: 30px; } }
 
 /*# sourceMappingURL=style.css.map */
